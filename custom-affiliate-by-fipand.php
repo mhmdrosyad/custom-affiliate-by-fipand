@@ -4,7 +4,7 @@ Plugin Name: Custom Affiliate Plugin with MemberPress Integration by Fipand
 Description: Plugin untuk mengatur komisi afiliasi berdasarkan membership dari MemberPress dengan tabel terpisah.
 Version: 1.0.0
 Author: Fipand
-GitHub Plugin URI: https://github.com/username/repository-name
+GitHub Plugin URI: https://github.com/mhmdrosyad/custom-affiliate-by-fipand
 */
 
 define('CAP_PLUGIN_PATH', plugin_dir_path(__FILE__));
