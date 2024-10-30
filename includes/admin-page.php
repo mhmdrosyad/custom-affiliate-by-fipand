@@ -13,7 +13,7 @@ function custom_affiliate_add_admin_menu()
 function custom_affiliate_settings_page()
 {
     global $wpdb;
-    $commission_rules_table = $wpdb->prefix . 'commission_rules';
+    $commission_rules_table = $wpdb->prefix . 'fipand_commission_rules';
 
     // Load semua jenis membership dari MemberPress
     if (class_exists('MeprProduct')) {

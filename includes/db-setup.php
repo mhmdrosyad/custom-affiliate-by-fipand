@@ -8,7 +8,7 @@ function custom_affiliate_create_tables()
     $charset_collate = $wpdb->get_charset_collate();
 
     // Tabel untuk data afiliasi
-    $affiliate_data_table = $wpdb->prefix . 'affiliate_data';
+    $affiliate_data_table = $wpdb->prefix . 'fipand_affiliate_data';
     $sql1 = "CREATE TABLE $affiliate_data_table (
         id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
         user_id BIGINT UNSIGNED NOT NULL,
@@ -19,7 +19,7 @@ function custom_affiliate_create_tables()
     ) $charset_collate;";
 
     // Tabel untuk aturan komisi berdasarkan jenis membership
-    $commission_rules_table = $wpdb->prefix . 'commission_rules';
+    $commission_rules_table = $wpdb->prefix . 'fipand_commission_rules';
     $sql2 = "CREATE TABLE $commission_rules_table (
         id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
         membership_id BIGINT UNSIGNED NOT NULL,

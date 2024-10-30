@@ -15,7 +15,7 @@ function cap_add_user_to_affiliate_data_after_payment($event)
     $membership_id = $transaction->product_id; // ID membership
 
     // Nama tabel
-    $affiliate_data_table = $wpdb->prefix . 'affiliate_data';
+    $affiliate_data_table = $wpdb->prefix . 'fipand_affiliate_data';
 
     // Tambahkan data ke tabel affiliate_data
     $wpdb->insert(

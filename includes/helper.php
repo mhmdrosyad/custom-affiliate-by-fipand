@@ -8,8 +8,8 @@
 function cap_get_commission_rate_by_user($user_id)
 {
     global $wpdb;
-    $affiliate_data_table = $wpdb->prefix . 'affiliate_data';
-    $commission_rules_table = $wpdb->prefix . 'commission_rules';
+    $affiliate_data_table = $wpdb->prefix . 'fipand_affiliate_data';
+    $commission_rules_table = $wpdb->prefix . 'fipand_commission_rules';
 
     $rate = $wpdb->get_var($wpdb->prepare(
         "SELECT cr.rate
@@ -46,7 +46,7 @@ function cap_commission_rate_shortcode($atts)
 function cap_update_affiliate_data($user_id, $amount, $commission_rate)
 {
     global $wpdb;
-    $affiliate_data_table = $wpdb->prefix . 'affiliate_data';
+    $affiliate_data_table = $wpdb->prefix . 'fipand_affiliate_data';
 
     // Hitung komisi
     $commission = $amount * ($commission_rate / 100);
